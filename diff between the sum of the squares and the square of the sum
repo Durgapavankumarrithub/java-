@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Sum_Of_Squares {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        scanner.close();
+        Difference difference = new Difference();
+        System.out.println("The difference between the sum of the squares and the square of the sum of the first " + n
+                + " natural numbers is: " + difference.findDifference(n));
+    }
+    static class Difference {
+        public int findDifference(int n) {
+            int sumOfSquares = 0;
+            int squareOfSum = 0;
+            for (int i = 1; i <= n; i++) {
+                sumOfSquares += i * i;
+                squareOfSum += i;
+            }
+            squareOfSum = squareOfSum * squareOfSum;
+            return squareOfSum - sumOfSquares;
+        }
+    }
+}
