@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class smallestnumber {
+    public static void main(String[] args) {
+        Scanner ab = new Scanner(System.in);
+        System.out.println("Enter the first num: ");
+        double firstNum = ab.nextDouble();
+        System.out.println("Enter the second num: ");
+        double secondNum = ab.nextDouble();
+        System.out.println("Enter the third num: ");
+        double thirdNum = ab.nextDouble();
+        System.out.println("The smallest value is " + smallest(firstNum, secondNum, thirdNum) + ".");
+        ab.close();
+    }
+    public static double smallest(double a, double b, double c) {
+        return Math.min(a, Math.min(b, c));
+    }
+}
