@@ -1,0 +1,26 @@
+import java.util.Scanner;
+ public class Employee_2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter empname:");
+        String empName = sc.nextLine();
+        System.out.println("Enter empID:");
+        int empId = sc.nextInt();
+        System.out.println("Enter empsalary:");
+        double empSalary = sc.nextDouble();
+        System.out.println("Enter empaddress:");
+        String empAddress = sc.nextLine();
+        System.out.println("Enter empgender (M/F):");
+        char empGender = sc.next().charAt(0);
+        System.out.println("Enter empemail:");
+        String empEmail = sc.nextLine();
+        System.out.println("Employee information:");
+        System.out.println("EmpID: " + empId);
+        System.out.println("Empname: " + empName);
+        System.out.println("Empsalary: " + empSalary);
+        System.out.println("Empaddress: " + empAddress);
+        System.out.println("Empgender: " + empGender);
+        System.out.println("Empemail: " + empEmail);
+        sc.close();
+    }
+}
